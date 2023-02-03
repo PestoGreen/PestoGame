@@ -1,0 +1,130 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
+public class mapbff : MonoBehaviour
+{
+    public GameObject DialoguePanel, dlp, ff;
+    public Text DialogueText;
+    public string[] dialogue;
+    private int index;
+    public float wordspeed;
+    public bool playerisclose = true;
+    public GameObject conbtn;
+    public GameObject blk;
+    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+        if (playerisclose)
+        {
+            //if (DialoguePanel.activeInHierarchy)
+            //{
+
+            //    DialogueText.text = "";
+            //    index = 0;
+            //    DialoguePanel.SetActive(false);
+            //    tool.SetActive(true);
+            //    settings.SetActive(true);
+            //    phonebtn.SetActive(true);
+            //}
+            if (!DialoguePanel.activeInHierarchy)
+            {
+                DialoguePanel.SetActive(true);
+                StartCoroutine(Typing());
+            }
+        }
+        if (DialogueText.text == dialogue[index])
+        {
+            conbtn.SetActive(true);
+        }
+        if (index == 0)
+        {
+            ff.SetActive(true);
+            dlp.SetActive(false);
+        }
+        if (index == 1)
+        {
+            dlp.SetActive(true);
+            ff.SetActive(false);
+        }
+        if (index == 2)
+        {
+            ff.SetActive(true);
+            dlp.SetActive(false);
+        }
+        if (index == 3)
+        {
+            dlp.SetActive(true);
+            ff.SetActive(false);
+        }
+    }
+
+    public void zerotext()
+    {
+        DialogueText.text = "";
+        index = 0;
+        DialoguePanel.SetActive(false);
+        PlayerPrefs.SetInt("notice", 1);
+        PlayerPrefs.SetInt("emerg", 4);
+        PlayerPrefs.SetInt("emerg2mes", 1);
+        PlayerPrefs.SetInt("src", 1);
+        blk.SetActive(true);
+        Invoke("csc", 3.5f);
+        calculate.resilv -= 2;
+    }
+    void csc()
+    {
+        SceneManager.LoadScene("fewdayslater");
+    }
+    IEnumerator Typing()
+    {
+        foreach (char letter in dialogue[index].ToCharArray())
+        {
+            DialogueText.text += letter;
+            yield return new WaitForSeconds(wordspeed);
+        }
+    }
+    public void NextLine()
+    {
+        conbtn.SetActive(false);
+        if (index < dialogue.Length - 1)
+        {
+            index++;
+            DialogueText.text = "";
+            StartCoroutine(Typing());
+        }
+        else
+        {
+            zerotext();
+            playerisclose = false;
+        }
+    }
+    //private void OnTriggerEnter2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("dlp"))
+    //    {
+    //        playerisclose = true;
+    //    }
+    //}
+    //private void OnTriggerExit2D(Collider2D other)
+    //{
+    //    if (other.CompareTag("dlp"))
+    //    { 
+    //        playerisclose = false;
+    //        DialogueText.text = "";
+    //        index = 0;
+    //        DialoguePanel.SetActive(false);
+    //    }
+    //}
+}
