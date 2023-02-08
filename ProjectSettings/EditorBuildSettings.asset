@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes1/Pick.unity
+    guid: 4f04f3f587df64a9db9506528454c580
+  - enabled: 1
+    path: Assets/Scenes1/discussroom.unity
+    guid: 390be28cc7f79465080ca97e5ea9260d
+  - enabled: 1
+    path: Assets/Scenes1/dlpdicuss.unity
+    guid: 38b17ff3f53624c9091c85f3a54760d0
+  - enabled: 1
+    path: Assets/Scenes/Game over.unity
+    guid: 04920218e357d6d4eb90b0f43af69789
+  - enabled: 1
+    path: Assets/Scenes/Awin.unity
+    guid: e040936f0f29682469d8477001831e41
+  - enabled: 1
+    path: Assets/Scenes/Bwin.unity
+    guid: 11e3b71765f6a544cb273f8aca169ea0
+  - enabled: 1
+    path: Assets/Scenes1/mapb.unity
+    guid: bd4cfb4ec5be842c5b3e894d627df803
+  - enabled: 1
+    path: Assets/Scenes1/mapc.unity
+    guid: 6d3dec96c6f874c369dd64ac863a95d3
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
+    guid: b22354d90a26e4a43adecae618812c7e
+  - enabled: 1
+    path: Assets/Scenes1/Gamesc1.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/final1.unity
+    guid: d3304776e4a91482e98226d4cbbf3496
+  - enabled: 1
+    path: Assets/Scenes/final2.unity
+    guid: 62ee6735a8e0247a2aaf8e564408ae9b
+  - enabled: 1
+    path: Assets/Scenes/final3.unity
+    guid: 3aecdadee9de44cbc8f908ffaedcd946
+  - enabled: 1
+    path: Assets/Scenes/final4.unity
+    guid: 0445daf56102b449b80bbe7f88eba10d
+  - enabled: 1
+    path: Assets/Scenes/final5.unity
+    guid: 91c6580a6b55b4217af6ab2ba155d0cd
+  - enabled: 1
+    path: Assets/Scenes1/Mapa.unity
+    guid: 6bc7f3719828a4f6bbb9d7094178b8ee
+  - enabled: 1
+    path: Assets/Scenes1/Room1.unity
+    guid: 840cee21249b642ebb8522e682bb07ad
+  - enabled: 1
+    path: Assets/Scenes1/Room2.unity
+    guid: 673db96e453724bb09a7058b23a66ef2
+  - enabled: 1
+    path: Assets/Scenes1/Room3.unity
+    guid: d8a6d53c5f8f74244a1f5f12d2925e28
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: 7bbd2febdab9c3f4f9a3b0a712af5a09
+  - enabled: 1
+    path: Assets/level3/game3mapb.unity
+    guid: ca536414bf031f448bd637013dccb337
+  - enabled: 1
+    path: Assets/level3/game3mapa.unity
+    guid: 172cb0389848d1e47a2a2e77a35e98dc
+  - enabled: 1
+    path: Assets/level3/game3mapc.unity
+    guid: 5ea099aa97ed14bc6861e2118b1e33ca
+  - enabled: 1
+    path: Assets/Scenes1/Game4.unity
+    guid: 1e88d19eec1ec413cbab01acb0384a14
+  - enabled: 1
+    path: Assets/Scenes/game5.unity
+    guid: 0bf086ee64f6648679f7af6afe70080c
+  - enabled: 1
+    path: Assets/mamatext/pppapp.unity
+    guid: 2a8bcc2c92fca4ea29dbd862bb476462
+  - enabled: 1
+    path: Assets/Scenes1/mapabuild.unity
+    guid: 19e84f13c6ef74796a9ca72fd34a22a2
+  - enabled: 1
+    path: Assets/Scenes1/mapbbuild.unity
+    guid: e449ce4459cd341d8a796b136d44b5a2
+  - enabled: 1
+    path: Assets/Scenes1/mapcbuild.unity
+    guid: 4d98bb550e63247c5ba4f3d2a3430cdc
+  - enabled: 1
+    path: Assets/Scenes1/emerg2sc.unity
+    guid: 4606ab8d9d3c04c668fcc607af6478e9
+  - enabled: 1
+    path: Assets/Scenes1/lastmapc.unity
+    guid: 54038636680c84748bcbd52963d1754b
+  - enabled: 1
+    path: Assets/Scenes1/lastmapb.unity
+    guid: 907baa1be728f4ce4b240dfa72e6e56c
+  - enabled: 1
+    path: Assets/Scenes1/lastmapa.unity
+    guid: c8c06aae4e7da42029cbc8d0368a2e6a
+  - enabled: 1
+    path: Assets/Scenes/winplay.unity
+    guid: 94289a5ad84fc40459b780e432f18925
+  - enabled: 1
+    path: Assets/Scenes/loseplay.unity
+    guid: 6ed8f13d2b76e4b8db86bd622dc21dde
+  - enabled: 1
+    path: Assets/Scenes1/phoneintro.unity
+    guid: a43e357a89ca54eb9be7308d364ba71c
+  - enabled: 1
+    path: Assets/Scenes1/fewdayslater.unity
+    guid: b279b6c6037424ba38dd39f304a173f6
+  m_configObjects: {}
